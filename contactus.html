@@ -42,8 +42,6 @@
     <link rel="stylesheet" href="css/theme-elements.css">
     <link rel="stylesheet" href="css/theme-blog.css">
     <link rel="stylesheet" href="css/theme-shop.css">
-    <link rel="stylesheet" href="user_asset/css/style.css">
-    <link rel="stylesheet" href="user_asset/css/responsive.css">
 
     <!-- Skin CSS -->
     <link id="skinCSS" rel="stylesheet" href="css/skins/default.css">
@@ -101,14 +99,15 @@
                                                         class="dropdown-item dropdown-toggle"
                                                         href="about-us-advanced.html">
                                                         About Us </a>
-                                                <li class="dropdown"> <a class="dropdown-item dropdown-toggle active"
-                                                        href="javascript:void(0);"> product </a>
+                                                <li class="dropdown"> <a class="dropdown-item dropdown-toggle"
+                                                        href="product.html">
+                                                        Product </a>
                                                 </li>
                                                 <li class="dropdown"> <a class="dropdown-item dropdown-toggle"
                                                         href="image-gallery.html">
                                                         Image Gallery </a>
                                                 </li>
-                                                <li class="dropdown"> <a class="dropdown-item dropdown-toggle"
+                                                <li class="dropdown"> <a class="dropdown-item dropdown-toggle active"
                                                         href="contactus.html">
                                                         contact us </a>
                                                 </li>
@@ -141,203 +140,200 @@
 
         <div role="main" class="main">
             <section
-                class="page-header page-header-modern page-header-background page-header-background-md overlay overlay-color-dark overlay-show overlay-op-7"
-                style="background-image: url(img/page-header/page-header-about-us.jpg);">
-                <div class="container">
-                    <div class="row mt-5">
-                        <div class="col-md-12 align-self-center p-static order-2 text-center">
-                            <h1 class="text-9 font-weight-bold">Products</h1>
+                class="section section-concept section-no-border section-dark section-angled section-angled-reverse p-0 m-0"
+                style="background-image: url(img/landing/header_bg.jpg); background-size: cover; background-position: center; min-height: 645px;">
+                <div class="section-angled-layer-bottom section-angled-layer-increase-angle bg-light"
+                    style="padding: 8rem 0;"></div>
+                <div class="container pt-lg-5 mt-5">
+                    <div class="row pt-3 pb-lg-0 pb-xl-0">
+                        <div class="col-lg-6 pt-4 mb-5 mb-lg-0">
+                            <h1 class="font-weight-bold text-10 text-xl-12 line-height-2 mb-3">Contact US</h1>
+                            <p class="opacity-7 text-4 negative-ls-05 pb-2 mb-4">Feel free to ask for details, don't
+                                save any questions</p>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="abt-sec">
-                <div class="container-wheel">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <div class="filter-box">
-                                <h3> All Categories</h3>
-                                <ul>
-                                    <li><a href="product.html" style="font-size:19px;" class="text-white">Manual
-                                            Wheelchair</a></li>
-                                    <li><a href="motorized-wheelchair.html" style="font-size:19px;"
-                                            class="text-white">Motorized Wheelchair</a></li>
-                                    <li><a href="commode-wheelchair.html" style="font-size:19px;"
-                                            class="text-white">Commode Wheelchair</a></li>
-                                    <li class="active"><a href="commode-chair.html" class="text-white" style="">Commode
-                                            Chair</a></li>
-                                    <li><a href="pediatric-wheelchair.html" style="font-size:19px;"
-                                            class="text-white">Pediatric Wheelchair</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-9">
+            <div class="container">
+                <h2 class="text-center">Contact Us</h2>
+                <div class="row py-4">
+                    <div class="col-lg-7 appear-animation" data-appear-animation="fadeIn"
+                        data-appear-animation-delay="650">
+
+                        <div class="offset-anchor" id="contact-sent"></div>
+
+                        <form id="contactFormAdvanced"
+                            action="https://www.okler.net/previews/porto/12.0.0/contact-us-advanced.php#contact-sent"
+                            method="POST" enctype="multipart/form-data">
+                            <input type="hidden" value="true" name="emailSent" id="emailSent">
                             <div class="row">
-
-                                <div class="col-md-4">
-                                    <div class="product-card">
-                                        <a href="commode-chair/commode-chair-rainbow-2.html">
-                                            <img src="img/wheelChair/upload/propertyImage/1668417203.webp"
-                                                alt="weelchair-1"></a>
-                                        <div class="product-details">
-                                            <h4>KARMA COMMODE CHAIR RAINBOW 2 </h4>
-                                            <p>
-                                                Chrome-plated steel body.
-                                                Foldable
-                                                Weight capacity 100Kg
-
-                                                Karma Rainbow 2 Commode Stool is made for old aged people or with...</p>
-
-
-                                        </div>
-                                        </a>
-                                        <div class="product-btns">
-                                            <a href="commode-chair/commode-chair-rainbow-2.html" class="btn-product">
-                                                View More</a>
-                                            <a href="contact.html" class="btn-product"> Enquire Now</a>
-                                        </div>
+                                <div class="form-group col-md-6">
+                                    <label class="form-label mb-1 text-2">Full Name</label>
+                                    <input type="text" value="" data-msg-required="Please enter your name."
+                                        maxlength="100" class="form-control text-3 h-auto py-2" name="name" id="name"
+                                        required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label class="form-label mb-1 text-2">Email Address</label>
+                                    <input type="email" value="" data-msg-required="Please enter your email address."
+                                        data-msg-email="Please enter a valid email address." maxlength="100"
+                                        class="form-control text-3 h-auto py-2" name="email" id="email" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-12">
+                                    <label class="form-label mb-1 text-2">Subject</label>
+                                    <select data-msg-required="Please enter the subject."
+                                        class="form-control text-3 h-auto py-2" name="subject" id="subject" required>
+                                        <option value="">...</option>
+                                        <option value="Option 1">Option 1</option>
+                                        <option value="Option 2">Option 2</option>
+                                        <option value="Option 3">Option 3</option>
+                                        <option value="Option 4">Option 4</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <p class="mb-2">Checkboxes</p>
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" name="checkboxes[]" type="checkbox"
+                                                data-msg-required="Please select at least one option."
+                                                id="inlineCheckbox1" value="option1"> 1
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" name="checkboxes[]" type="checkbox"
+                                                data-msg-required="Please select at least one option."
+                                                id="inlineCheckbox1" value="option2"> 2
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" name="checkboxes[]" type="checkbox"
+                                                data-msg-required="Please select at least one option."
+                                                id="inlineCheckbox1" value="option3"> 3
+                                        </label>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
-                                    <div class="product-card">
-                                        <a href="commode-chair/commode-chair-rainbow-5.html">
-                                            <img src="img/wheelChair/upload/propertyImage/1668417232.webp"
-                                                alt="weelchair-1"></a>
-                                        <div class="product-details">
-                                            <h4>KARMA COMMODE CHAIR RAINBOW 5 </h4>
-                                            <p>Chrome-plated steel body.
-                                                Foldable
-                                                Weight capacity 100Kg
-
-                                                Wheelchair Wala deals in Rainbow Commode chairs in Delhi, Gurgaon, Noida
-                                                and Faridabad...</p>
-
-
-                                        </div>
-                                        </a>
-                                        <div class="product-btns">
-                                            <a href="commode-chair/commode-chair-rainbow-5.html" class="btn-product">
-                                                View More</a>
-                                            <a href="contact.html" class="btn-product"> Enquire Now</a>
-                                        </div>
+                                <div class="form-group col-md-6">
+                                    <p class="mb-2">Radios</p>
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="radios"
+                                                data-msg-required="Please select at least one option." id="inlineRadio1"
+                                                value="option1"> 1
+                                        </label>
                                     </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="product-card">
-                                        <a href="commode-chair/commode-chair-german.html">
-                                            <img src="img/wheelChair/upload/propertyImage/1668417275.webp"
-                                                alt="weelchair-1"></a>
-                                        <div class="product-details">
-                                            <h4>COMMODE CHAIR GERMAN </h4>
-                                            <p>Foldable
-                                                adjustable as per requirement.
-                                                Origin-Germany
-
-                                                Wheelchair Wala deals in all types of Commode wheelchair, German Commode
-                                                wheelchairs, German Commode...</p>
-
-
-                                        </div>
-                                        </a>
-                                        <div class="product-btns">
-                                            <a href="commode-chair/commode-chair-german.html" class="btn-product"> View
-                                                More</a>
-                                            <a href="contact.html" class="btn-product"> Enquire Now</a>
-                                        </div>
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="radios"
+                                                data-msg-required="Please select at least one option." id="inlineRadio2"
+                                                value="option2"> 2
+                                        </label>
                                     </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="product-card">
-                                        <a href="commode-chair/arcatron-mobility-wheelchair.html">
-                                            <img src="img/wheelChair/upload/propertyImage/1666942319.png"
-                                                alt="weelchair-1"></a>
-                                        <div class="product-details">
-                                            <h4>ARCATRON MOBILITY WHEELCHAIR </h4>
-                                            <p>Seat width 19&amp;quot;
-                                                Commode clearance 18&amp;quot;x15.5&amp;quot;
-                                                Carrying capacity of 150 kg
-                                                The armrest is removable for easy transfer by the...</p>
-
-
-                                        </div>
-                                        </a>
-                                        <div class="product-btns">
-                                            <a href="commode-chair/arcatron-mobility-wheelchair.html"
-                                                class="btn-product"> View More</a>
-                                            <a href="contact.html" class="btn-product"> Enquire Now</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="product-card">
-                                        <a href="commode-chair/arcatron-mobility-commode-wheel-chair.html">
-                                            <img src="img/wheelChair/upload/propertyImage/1668147187.jpg"
-                                                alt="weelchair-1"></a>
-                                        <div class="product-details">
-                                            <h4>ARCATRON MOBILITY COMMODE WHEEL CHAIR </h4>
-                                            <p>Overall width under 21&amp;quot; to fit in most washrooms
-                                                Tool free seat height adjustment upto 6&amp;quot;
-                                                Roll over most commodes...</p>
-
-
-                                        </div>
-                                        </a>
-                                        <div class="product-btns">
-                                            <a href="commode-chair/arcatron-mobility-commode-wheel-chair.html"
-                                                class="btn-product"> View More</a>
-                                            <a href="contact.html" class="btn-product"> Enquire Now</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="product-card">
-                                        <a href="commode-chair/arcatron-mobility-commode-chair.html">
-                                            <img src="img/wheelChair/upload/propertyImage/1668417346.webp"
-                                                alt="weelchair-1"></a>
-                                        <div class="product-details">
-                                            <h4>ARCATRON MOBILITY COMMODE CHAIR </h4>
-                                            <p>Overall width under 21&amp;quot; to fit in most washrooms
-                                                Tool free seat height adjustment upto 6&amp;quot;
-                                                Roll over most commodes...</p>
-
-
-                                        </div>
-                                        </a>
-                                        <div class="product-btns">
-                                            <a href="commode-chair/arcatron-mobility-commode-chair.html"
-                                                class="btn-product"> View More</a>
-                                            <a href="contact.html" class="btn-product"> Enquire Now</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="product-card">
-                                        <a href="commode-chair/frido-commode-chair.html">
-                                            <img src="img/wheelChair/upload/propertyImage/1666942604.png"
-                                                alt="weelchair-1"></a>
-                                        <div class="product-details">
-                                            <h4>FRIDO COMMODE CHAIR </h4>
-                                            <p>Portable packs in a suitcase within 60 seconds
-                                                Swivel flip back armrest
-                                                Reversible seating system
-                                                Rust proof.
-                                                Attendant-driven and self-propelled...</p>
-
-
-                                        </div>
-                                        </a>
-                                        <div class="product-btns">
-                                            <a href="commode-chair/frido-commode-chair.html" class="btn-product"> View
-                                                More</a>
-                                            <a href="contact.html" class="btn-product"> Enquire Now</a>
-                                        </div>
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="radios"
+                                                data-msg-required="Please select at least one option." id="inlineRadio3"
+                                                value="option3"> 3
+                                        </label>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                            <div class="row">
+                                <div class="form-group col-md-12">
+                                    <label class="form-label mb-1 text-2">Attachment</label>
+                                    <input class="form-control d-block" type="file" name="attachment" id="attachment">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-12 mb-4">
+                                    <label class="form-label mb-1 text-2">Message</label>
+                                    <textarea maxlength="5000" data-msg-required="Please enter your message." rows="6"
+                                        class="form-control text-3 h-auto py-2" name="message" id="message"
+                                        required></textarea>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-12 mb-5">
+                                    <input type="submit" id="contactFormSubmit" value="Send Message"
+                                        class="btn btn-primary btn-modern pull-right" data-loading-text="Loading...">
+                                </div>
+                            </div>
+                        </form>
+
                     </div>
+                    <div class="col-lg-5">
+
+                        <div class="overflow-hidden mb-1">
+                            <h4 class="text-primary mb-0 appear-animation" data-appear-animation="maskUp"
+                                data-appear-animation-delay="200">Get in <strong>Touch</strong></h4>
+                        </div>
+                        <div class="overflow-hidden mb-3">
+                            <p class="lead text-4 mb-0 appear-animation" data-appear-animation="maskUp"
+                                data-appear-animation-delay="400">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit. Curabitur eget leo at velit imperdiet varius. In eu ipsum vitae velit congue
+                                iaculis vitae at risus.</p>
+                        </div>
+                        <div class="overflow-hidden">
+                            <p class="mb-0 appear-animation" data-appear-animation="maskUp"
+                                data-appear-animation-delay="600">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit. Curabitur eget leo at velit imperdiet varius.</p>
+                        </div>
+
+                        <div class="appear-animation" data-appear-animation="fadeInUpShorter"
+                            data-appear-animation-delay="800">
+                            <h4 class="text-primary pt-5">Our <strong>Office</strong></h4>
+                            <ul class="list list-icons list-icons-style-3 mt-2">
+                                <li><i class="fas fa-map-marker-alt top-6"></i> <strong>Address:</strong> Melbourne, 121
+                                    King St, Australia</li>
+                                <li><i class="fas fa-phone top-6"></i> <strong>Phone:</strong> (123) 456-789</li>
+                                <li><i class="fas fa-envelope top-6"></i> <strong>Email:</strong> <a
+                                        href="https://www.okler.net/cdn-cgi/l/email-protection#bbd6dad2d7fbdec3dad6cbd7de95d8d4d6"><span
+                                            class="__cf_email__"
+                                            data-cfemail="731e121a1f33160b121e031f165d101c1e">[email&#160;protected]</span></a>
+                                </li>
+                            </ul>
+
+                            <div class="row lightbox mt-4 mb-0 pb-0"
+                                data-plugin-options="{'delegate': 'a', 'type': 'image', 'gallery': {'enabled': true}}">
+                                <div class="col-md-4 mb-4 mb-md-0">
+                                    <a class="img-thumbnail p-0 border-0 d-block" href="img/office/our-office-1.jpg"
+                                        data-plugin-options="{'type':'image'}">
+                                        <img class="img-fluid" src="img/office/our-office-1.jpg" alt="Office">
+                                    </a>
+                                </div>
+                                <div class="col-md-4 mb-4 mb-md-0">
+                                    <a class="img-thumbnail p-0 border-0 d-block" href="img/office/our-office-2.jpg"
+                                        data-plugin-options="{'type':'image'}">
+                                        <img class="img-fluid" src="img/office/our-office-2.jpg" alt="Office">
+                                    </a>
+                                </div>
+                                <div class="col-md-4">
+                                    <a class="img-thumbnail p-0 border-0 d-block" href="img/office/our-office-3.jpg"
+                                        data-plugin-options="{'type':'image'}">
+                                        <img class="img-fluid" src="img/office/our-office-3.jpg" alt="Office">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <h4 class="text-primary pt-5">Business <strong>Hours</strong></h4>
+                            <ul class="list list-icons list-dark mt-2">
+                                <li><i class="far fa-clock top-6"></i> Monday - Friday - 9am to 5pm</li>
+                                <li><i class="far fa-clock top-6"></i> Saturday - 9am to 2pm</li>
+                                <li><i class="far fa-clock top-6"></i> Sunday - Closed</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
                 </div>
-            </section>
+
+            </div>
+
         </div>
 
         <footer id="footer" class="border-0"
